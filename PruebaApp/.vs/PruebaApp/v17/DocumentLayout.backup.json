@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\david\\source\\repos\\PruebaApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9522B79C-D1AC-41C0-81DB-1446823923B9}|PruebaApp\\PruebaApp.csproj|c:\\users\\david\\source\\repos\\pruebaapp\\pruebaapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9522B79C-D1AC-41C0-81DB-1446823923B9}|PruebaApp\\PruebaApp.csproj|solutionrelative:pruebaapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\PruebaApp\\PruebaApp\\Program.cs",
+              "RelativeDocumentMoniker": "PruebaApp\\Program.cs",
+              "ToolTip": "C:\\Users\\david\\source\\repos\\PruebaApp\\PruebaApp\\Program.cs*",
+              "RelativeToolTip": "PruebaApp\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T16:35:37.524Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

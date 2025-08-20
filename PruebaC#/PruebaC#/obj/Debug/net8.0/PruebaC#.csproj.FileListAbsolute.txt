@@ -1,0 +1,14 @@
+C:\Users\david\source\repos\PruebaC#\PruebaC#\bin\Debug\net8.0\PruebaC#.exe
+C:\Users\david\source\repos\PruebaC#\PruebaC#\bin\Debug\net8.0\PruebaC#.deps.json
+C:\Users\david\source\repos\PruebaC#\PruebaC#\bin\Debug\net8.0\PruebaC#.runtimeconfig.json
+C:\Users\david\source\repos\PruebaC#\PruebaC#\bin\Debug\net8.0\PruebaC#.dll
+C:\Users\david\source\repos\PruebaC#\PruebaC#\bin\Debug\net8.0\PruebaC#.pdb
+C:\Users\david\source\repos\PruebaC#\PruebaC#\obj\Debug\net8.0\PruebaC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\PruebaC#\PruebaC#\obj\Debug\net8.0\PruebaC#.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\PruebaC#\PruebaC#\obj\Debug\net8.0\PruebaC#.AssemblyInfo.cs
+C:\Users\david\source\repos\PruebaC#\PruebaC#\obj\Debug\net8.0\PruebaC#.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\PruebaC#\PruebaC#\obj\Debug\net8.0\PruebaC#.dll
+C:\Users\david\source\repos\PruebaC#\PruebaC#\obj\Debug\net8.0\refint\PruebaC#.dll
+C:\Users\david\source\repos\PruebaC#\PruebaC#\obj\Debug\net8.0\PruebaC#.pdb
+C:\Users\david\source\repos\PruebaC#\PruebaC#\obj\Debug\net8.0\PruebaC#.genruntimeconfig.cache
+C:\Users\david\source\repos\PruebaC#\PruebaC#\obj\Debug\net8.0\ref\PruebaC#.dll

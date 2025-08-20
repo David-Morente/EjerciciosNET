@@ -1,0 +1,14 @@
+C:\Users\david\source\repos\PruebaApp\PruebaApp\bin\Debug\net8.0\PruebaApp.exe
+C:\Users\david\source\repos\PruebaApp\PruebaApp\bin\Debug\net8.0\PruebaApp.deps.json
+C:\Users\david\source\repos\PruebaApp\PruebaApp\bin\Debug\net8.0\PruebaApp.runtimeconfig.json
+C:\Users\david\source\repos\PruebaApp\PruebaApp\bin\Debug\net8.0\PruebaApp.dll
+C:\Users\david\source\repos\PruebaApp\PruebaApp\bin\Debug\net8.0\PruebaApp.pdb
+C:\Users\david\source\repos\PruebaApp\PruebaApp\obj\Debug\net8.0\PruebaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\PruebaApp\PruebaApp\obj\Debug\net8.0\PruebaApp.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\PruebaApp\PruebaApp\obj\Debug\net8.0\PruebaApp.AssemblyInfo.cs
+C:\Users\david\source\repos\PruebaApp\PruebaApp\obj\Debug\net8.0\PruebaApp.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\PruebaApp\PruebaApp\obj\Debug\net8.0\PruebaApp.dll
+C:\Users\david\source\repos\PruebaApp\PruebaApp\obj\Debug\net8.0\refint\PruebaApp.dll
+C:\Users\david\source\repos\PruebaApp\PruebaApp\obj\Debug\net8.0\PruebaApp.pdb
+C:\Users\david\source\repos\PruebaApp\PruebaApp\obj\Debug\net8.0\PruebaApp.genruntimeconfig.cache
+C:\Users\david\source\repos\PruebaApp\PruebaApp\obj\Debug\net8.0\ref\PruebaApp.dll

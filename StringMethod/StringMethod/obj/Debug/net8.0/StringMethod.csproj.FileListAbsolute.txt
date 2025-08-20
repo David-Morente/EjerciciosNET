@@ -1,0 +1,14 @@
+C:\Users\david\source\repos\StringMethod\StringMethod\bin\Debug\net8.0\StringMethod.exe
+C:\Users\david\source\repos\StringMethod\StringMethod\bin\Debug\net8.0\StringMethod.deps.json
+C:\Users\david\source\repos\StringMethod\StringMethod\bin\Debug\net8.0\StringMethod.runtimeconfig.json
+C:\Users\david\source\repos\StringMethod\StringMethod\bin\Debug\net8.0\StringMethod.dll
+C:\Users\david\source\repos\StringMethod\StringMethod\bin\Debug\net8.0\StringMethod.pdb
+C:\Users\david\source\repos\StringMethod\StringMethod\obj\Debug\net8.0\StringMethod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\StringMethod\StringMethod\obj\Debug\net8.0\StringMethod.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\StringMethod\StringMethod\obj\Debug\net8.0\StringMethod.AssemblyInfo.cs
+C:\Users\david\source\repos\StringMethod\StringMethod\obj\Debug\net8.0\StringMethod.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\StringMethod\StringMethod\obj\Debug\net8.0\StringMethod.dll
+C:\Users\david\source\repos\StringMethod\StringMethod\obj\Debug\net8.0\refint\StringMethod.dll
+C:\Users\david\source\repos\StringMethod\StringMethod\obj\Debug\net8.0\StringMethod.pdb
+C:\Users\david\source\repos\StringMethod\StringMethod\obj\Debug\net8.0\StringMethod.genruntimeconfig.cache
+C:\Users\david\source\repos\StringMethod\StringMethod\obj\Debug\net8.0\ref\StringMethod.dll
