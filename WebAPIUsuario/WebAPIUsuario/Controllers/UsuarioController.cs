@@ -23,7 +23,7 @@ namespace WebAPIUsuario.Controllers
 
         [HttpPost("guardar")]
         public async Task<ActionResult<Usuario>> GuardarUsuario(Usuario usuario){
-
+            usuario.Password = BCrypt.Net.BCrypt.HashPassword(usuario.Password);
             usuario.FechaCreacion = DateTime.Now;
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();

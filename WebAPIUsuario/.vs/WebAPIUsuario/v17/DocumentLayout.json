@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\david\\source\\repos\\WebAPIUsuario\\",
+  "WorkspaceRootPath": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\source\\repos\\webapiusuario\\webapiusuario\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\source\\repos\\webapiusuario\\webapiusuario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\source\\repos\\webapiusuario\\webapiusuario\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\models\\dbusuariocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\models\\dbusuariocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\source\\repos\\webapiusuario\\webapiusuario\\models\\dbusuariocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\models\\dbusuariocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,52 +38,68 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Usuario.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T23:04:03.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "WebAPIUsuario\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAqwDoAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wBwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-21T21:19:20.112Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\WebAPIUsuario\\WebAPIUsuario\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Program.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Program.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\WebAPIUsuario\\WebAPIUsuario\\Program.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Program.cs",
               "RelativeToolTip": "WebAPIUsuario\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T21:12:01.992Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\WebAPIUsuario\\WebAPIUsuario\\appsettings.json",
-              "RelativeDocumentMoniker": "WebAPIUsuario\\appsettings.json",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\WebAPIUsuario\\WebAPIUsuario\\appsettings.json",
-              "RelativeToolTip": "WebAPIUsuario\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-21T21:10:21.56Z"
+              "WhenOpened": "2025-08-21T21:12:01.992Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\appsettings.json",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\appsettings.json",
+              "RelativeToolTip": "WebAPIUsuario\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-21T21:10:21.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DbUsuarioContext.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\WebAPIUsuario\\WebAPIUsuario\\Models\\DbUsuarioContext.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\DbUsuarioContext.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\DbUsuarioContext.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\WebAPIUsuario\\WebAPIUsuario\\Models\\DbUsuarioContext.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\DbUsuarioContext.cs",
               "RelativeToolTip": "WebAPIUsuario\\Models\\DbUsuarioContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T21:08:47.136Z"
+              "WhenOpened": "2025-08-21T21:08:47.136Z",
+              "EditorCaption": ""
             }
           ]
         }
