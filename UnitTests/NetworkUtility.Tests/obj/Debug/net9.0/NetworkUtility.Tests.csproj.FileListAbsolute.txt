@@ -104,3 +104,14 @@ C:\Users\david\source\repos\UnitTests\NetworkUtility.Tests\bin\Debug\net9.0\Netw
 C:\Users\david\source\repos\UnitTests\NetworkUtility.Tests\bin\Debug\net9.0\FluentAssertions.dll
 C:\Users\david\source\repos\UnitTests\NetworkUtility.Tests\bin\Debug\net9.0\NetworkUtility.dll
 C:\Users\david\source\repos\UnitTests\NetworkUtility.Tests\bin\Debug\net9.0\NetworkUtility.pdb
+C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\UnitTests\NetworkUtility.Tests\bin\Debug\net9.0\.msCoverageSourceRootsMapping_NetworkUtility.Tests
+C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\UnitTests\NetworkUtility.Tests\bin\Debug\net9.0\CoverletSourceRootsMapping_NetworkUtility.Tests
+C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\UnitTests\NetworkUtility.Tests\obj\Debug\net9.0\NetworkUtility.Tests.csproj.AssemblyReference.cache
+C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\UnitTests\NetworkUtility.Tests\obj\Debug\net9.0\NetworkUtility.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\UnitTests\NetworkUtility.Tests\obj\Debug\net9.0\NetworkUtility.Tests.AssemblyInfoInputs.cache
+C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\UnitTests\NetworkUtility.Tests\obj\Debug\net9.0\NetworkUtility.Tests.AssemblyInfo.cs
+C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\UnitTests\NetworkUtility.Tests\obj\Debug\net9.0\NetworkUtility.Tests.csproj.CoreCompileInputs.cache
+C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\UnitTests\NetworkUtility.Tests\obj\Debug\net9.0\NetworkUtility.Tests.sourcelink.json
+C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\UnitTests\NetworkUtility.Tests\obj\Debug\net9.0\NetworkUtility.Tests.dll
+C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\UnitTests\NetworkUtility.Tests\obj\Debug\net9.0\refint\NetworkUtility.Tests.dll
+C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\UnitTests\NetworkUtility.Tests\obj\Debug\net9.0\NetworkUtility.Tests.pdb

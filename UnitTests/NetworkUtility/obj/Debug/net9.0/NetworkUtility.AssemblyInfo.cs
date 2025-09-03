@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetworkUtility")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18adce060e74176beaf23fc6a2eaedca48ede0b3")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetworkUtility")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetworkUtility")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
