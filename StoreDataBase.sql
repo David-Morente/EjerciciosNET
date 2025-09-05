@@ -26,12 +26,57 @@ CREATE TABLE User(
     FOREIGN KEY (cliente_id) REFERENCES Cliente(id)
 );
 
-SELECT * FROM Cliente c
-INNER JOIN User u ON u.cliente_id = c.id;
-
 CREATE TABLE Categoria(
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	nombre VARCHAR(100)
+);
+
+CREATE TABLE Proveedor(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_empresa VARCHAR(100)
+);
+
+CREATE TABLE Direccion_Proveedor(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	calle VARCHAR(100),
+    codigo_postal INT NOT NULL,
+    ciudad VARCHAR (100),
+    proveedor_id INT NOT NULL,
+    FOREIGN KEY (proveedor_id) REFERENCES Proveedor(id)
+);
+
+CREATE TABLE Categoria_Insumo(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Insumo(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    stock INT NOT NULL,
+    precio DECIMAL(10,2) NOT NULL,
+    categoria_id INT NOT NULL,
+    proveedor_id INT NOT NULL,
+    FOREIGN KEY (categoria_id) REFERENCES Categoria_Insumo(id),
+	FOREIGN KEY (proveedor_id) REFERENCES Proveedor(id)
+);
+
+CREATE TABLE Compra_Proveedor(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    fecha DATETIME NOT NULL,
+    proveedor_id INT NOT NULL,
+    total DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (proveedor_id) REFERENCES Proveedor(id)
+);
+
+CREATE TABLE Detalle_Compra(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    compra_id INT NOT NULL,
+    insumo_id INT NOT NULL,
+    cantidad INT NOT NULL,
+    precio_unitario DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (compra_id) REFERENCES Compra_Proveedor(id),
+    FOREIGN KEY (insumo_id) REFERENCES Insumo(id)
 );
 
 CREATE TABLE Producto(
@@ -69,87 +114,159 @@ CREATE TABLE Detalle_Factura(
 
 INSERT INTO Cliente (nombre, apellido) VALUES
 ('Juan', 'Pérez'),
-('María', 'Gómez'),
+('María', 'López'),
 ('Carlos', 'Ramírez'),
-('Ana', 'López'),
-('Pedro', 'Martínez'),
-('Lucía', 'Fernández'),
-('Miguel', 'Torres'),
+('Ana', 'García'),
+('Luis', 'Martínez'),
 ('Sofía', 'Hernández'),
-('David', 'Castillo'),
-('Elena', 'Morales');
+('Pedro', 'Castillo'),
+('Laura', 'Morales'),
+('Diego', 'Flores'),
+('Elena', 'Torres');
 
 INSERT INTO Direccion (calle, codigo_postal, ciudad, cliente_id) VALUES
-('Av. Reforma 123', 1001, 'Guatemala', 1),
-('Calle Central 45', 1002, 'Mixco', 2),
-('Colonia Bella 67', 1003, 'Villa Nueva', 3),
-('Zona 10 Torre 8', 1004, 'Guatemala', 4),
-('Residencial Los Olivos', 1005, 'Antigua', 5),
-('Av. Petapa 55', 1006, 'Guatemala', 6),
-('Calle Real 89', 1007, 'Amatitlán', 7),
-('Barrio San José', 1008, 'Escuintla', 8),
-('Zona 15', 1009, 'Guatemala', 9),
-('Residencial Las Flores', 1010, 'Mixco', 10);
+('Calle 1', 1001, 'Guatemala', 1),
+('Avenida Reforma 2', 1002, 'Guatemala', 2),
+('Zona 5', 1003, 'Guatemala', 3),
+('Boulevard Vista', 1004, 'Guatemala', 4),
+('Colonia Las Flores', 1005, 'Mixco', 5),
+('Zona 10', 1006, 'Guatemala', 6),
+('Carretera El Salvador', 1007, 'Santa Catarina', 7),
+('Zona 1', 1008, 'Guatemala', 8),
+('Zona 18', 1009, 'Guatemala', 9),
+('Barrio San Pedro', 1010, 'Antigua', 10);
 
 INSERT INTO User (correo, password, cliente_id) VALUES
-('juanperez@mail.com', '1234', 1),
-('maria@mail.com', 'abcd', 2),
-('carlos@mail.com', 'pass123', 3),
-('ana@mail.com', 'qwerty', 4),
-('pedro@mail.com', 'pedro123', 5),
-('lucia@mail.com', 'lucia456', 6),
-('miguel@mail.com', 'miguel789', 7),
-('sofia@mail.com', 'sofia321', 8),
-('david@mail.com', 'david654', 9),
-('elena@mail.com', 'elena987', 10);
+('juan@mail.com', 'pass1', 1),
+('maria@mail.com', 'pass2', 2),
+('carlos@mail.com', 'pass3', 3),
+('ana@mail.com', 'pass4', 4),
+('luis@mail.com', 'pass5', 5),
+('sofia@mail.com', 'pass6', 6),
+('pedro@mail.com', 'pass7', 7),
+('laura@mail.com', 'pass8', 8),
+('diego@mail.com', 'pass9', 9),
+('elena@mail.com', 'pass10', 10);
+
+INSERT INTO Proveedor (nombre_empresa) VALUES
+('Distribuidora La Central'),
+('Insumos y Más'),
+('Tech Importaciones'),
+('OfiMax'),
+('Limpieza Total'),
+('Papelería Mundial'),
+('Empaques Express'),
+('ElectroDistribuidor'),
+('Global Supplies'),
+('Mega Proveedores');
+
+INSERT INTO Direccion_Proveedor (calle, codigo_postal, ciudad, proveedor_id) VALUES
+('Av. Las Américas', 2001, 'Guatemala', 1),
+('Zona 12', 2002, 'Guatemala', 2),
+('Zona 4', 2003, 'Guatemala', 3),
+('Zona 7', 2004, 'Guatemala', 4),
+('Zona 8', 2005, 'Guatemala', 5),
+('Zona 9', 2006, 'Mixco', 6),
+('Zona 11', 2007, 'Guatemala', 7),
+('Zona 14', 2008, 'Guatemala', 8),
+('Zona 15', 2009, 'Guatemala', 9),
+('Zona 16', 2010, 'Guatemala', 10);
 
 INSERT INTO Categoria (nombre) VALUES
-('Abarrotes'),
 ('Electrónica'),
-('Hogar'),
 ('Ropa'),
-('Lácteos'),
+('Juguetes'),
+('Calzado'),
+('Accesorios'),
+('Alimentos'),
 ('Bebidas'),
+('Hogar'),
+('Deportes'),
+('Videojuegos');
+
+INSERT INTO Categoria_Insumo (nombre) VALUES
 ('Limpieza'),
-('Frutas y Verduras'),
-('Carnes'),
-('Panadería');
+('Oficina'),
+('Embalaje'),
+('Tecnología'),
+('Mantenimiento'),
+('Higiene'),
+('Seguridad'),
+('Papelería'),
+('Herramientas'),
+('Otros');
+
+INSERT INTO Insumo (nombre, stock, precio, categoria_id, proveedor_id) VALUES
+('Detergente', 50, 25.50, 1, 1),
+('Escoba', 30, 40.00, 1, 2),
+('Hojas A4 (resma)', 100, 35.00, 2, 3),
+('Cinta adhesiva', 80, 15.00, 3, 4),
+('Cajas de cartón', 60, 10.00, 3, 5),
+('Tóner impresora', 20, 150.00, 4, 6),
+('Guantes de limpieza', 40, 18.00, 5, 7),
+('Gel antibacterial', 70, 12.50, 6, 8),
+('Cámara de seguridad', 15, 300.00, 7, 9),
+('Destornillador', 25, 22.00, 9, 10);
+
+INSERT INTO Compra_Proveedor (fecha, proveedor_id, total) VALUES
+('2025-09-01 10:00:00', 1, 2550.00),
+('2025-09-02 11:30:00', 2, 1200.00),
+('2025-09-03 09:15:00', 3, 1800.00),
+('2025-09-04 14:20:00', 4, 950.00),
+('2025-09-05 16:10:00', 5, 2000.00),
+('2025-09-06 12:00:00', 6, 1750.00),
+('2025-09-07 15:45:00', 7, 2100.00),
+('2025-09-08 13:50:00', 8, 3100.00),
+('2025-09-09 17:30:00', 9, 2700.00),
+('2025-09-10 08:40:00', 10, 500.00);
+
+INSERT INTO Detalle_Compra (compra_id, insumo_id, cantidad, precio_unitario) VALUES
+(1, 1, 20, 25.50),
+(2, 2, 10, 40.00),
+(3, 3, 30, 35.00),
+(4, 4, 15, 15.00),
+(5, 5, 40, 10.00),
+(6, 6, 5, 150.00),
+(7, 7, 20, 18.00),
+(8, 8, 25, 12.50),
+(9, 9, 5, 300.00),
+(10, 10, 10, 22.00);
 
 INSERT INTO Producto (nombre, precio, stock, categoria_id) VALUES
-('Arroz Diana 5kg', 90.00, 200, 1),
-('Frijoles Rojos 2lb', 35.00, 300, 1),
-('Leche Dos Pinos 1L', 18.00, 500, 5),
-('Coca Cola 2.5L', 25.00, 400, 6),
-('Pollo Entero 1kg', 45.00, 150, 9),
-('Pan Bimbo Familiar', 32.00, 250, 10),
-('Detergente Ariel 3kg', 120.00, 180, 7),
-('Televisor Samsung 50"', 3500.00, 20, 2),
-('Celular Motorola G32', 1500.00, 30, 2),
-('Camiseta Básica Hombre', 60.00, 100, 4);
+('Smartphone', 2500.00, 20, 1),
+('Laptop', 6000.00, 15, 1),
+('Camisa', 150.00, 50, 2),
+('Pantalón', 250.00, 40, 2),
+('Pelota de fútbol', 200.00, 30, 9),
+('Auriculares', 350.00, 25, 1),
+('Sandalias', 180.00, 35, 4),
+('Collar', 120.00, 60, 5),
+('Cereal', 45.00, 100, 6),
+('Juego de PlayStation', 1200.00, 10, 10);
 
 INSERT INTO Tienda (direccion) VALUES
-('Walmart Zona 1, Guatemala'),
-('Walmart Zona 10, Guatemala'),
-('Walmart Mixco San Cristóbal'),
-('Walmart Antigua Guatemala'),
-('Walmart Villa Nueva'),
-('Walmart Escuintla Centro'),
-('Walmart Quetzaltenango'),
-('Walmart Huehuetenango'),
-('Walmart Chimaltenango'),
-('Walmart Zona 18, Guatemala');
+('Zona 1, Guatemala'),
+('Zona 10, Guatemala'),
+('Zona 11, Mixco'),
+('Zona 5, Villa Nueva'),
+('Zona 4, Antigua'),
+('Zona 12, Guatemala'),
+('Zona 18, Guatemala'),
+('Zona 16, Guatemala'),
+('Zona 9, Guatemala'),
+('Zona 13, Guatemala');
 
 INSERT INTO Factura (fecha, total, cliente_id, tienda_id) VALUES
-(NOW(), 600, 1, 1),
-(NOW(), 150, 2, 2),
-(NOW(), 2500, 3, 3),
-(NOW(), 3800, 4, 4),
-(NOW(), 90, 5, 5),
-(NOW(), 75, 6, 6),
-(NOW(), 500, 7, 7),
-(NOW(), 3600, 8, 8),
-(NOW(), 120, 9, 9),
-(NOW(), 1800, 10, 10);
+('2025-09-01 09:00:00', 500.00, 1, 1),
+('2025-09-02 10:15:00', 1200.00, 2, 2),
+('2025-09-03 11:30:00', 250.00, 3, 3),
+('2025-09-04 14:00:00', 6000.00, 4, 4),
+('2025-09-05 15:10:00', 180.00, 5, 5),
+('2025-09-06 16:25:00', 350.00, 6, 6),
+('2025-09-07 17:40:00', 700.00, 7, 7),
+('2025-09-08 12:50:00', 900.00, 8, 8),
+('2025-09-09 13:30:00', 1500.00, 9, 9),
+('2025-09-10 18:45:00', 1200.00, 10, 10);
 
 INSERT INTO Detalle_Factura (factura_id, producto_id, cantidad) VALUES
 (1, 1, 2),
@@ -176,6 +293,9 @@ INSERT INTO Detalle_Factura (factura_id, producto_id, cantidad) VALUES
 (10, 10, 10),
 (10, 4, 5),
 (10, 5, 3);
+
+SELECT * FROM Cliente c
+INNER JOIN User u ON u.cliente_id = c.id;
 
 SELECT * FROM Categoria;
 SELECT * FROM Producto;
