@@ -16,6 +16,7 @@ public partial class DbUsuarioContext : DbContext
     }
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
+    public virtual DbSet<Cliente> Clientes { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

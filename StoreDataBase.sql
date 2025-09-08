@@ -18,7 +18,7 @@ CREATE TABLE Direccion(
     FOREIGN KEY (cliente_id) REFERENCES Cliente(id)
 );
 
-CREATE TABLE User(
+CREATE TABLE Usuario(
 	id INT AUTO_INCREMENT PRIMARY KEY,
     correo VARCHAR(150),
     password VARCHAR(250) NOT NULL,
@@ -55,9 +55,9 @@ CREATE TABLE Insumo(
     nombre VARCHAR(100) NOT NULL,
     stock INT NOT NULL,
     precio DECIMAL(10,2) NOT NULL,
-    categoria_id INT NOT NULL,
+    categoriaInsumo_id INT NOT NULL,
     proveedor_id INT NOT NULL,
-    FOREIGN KEY (categoria_id) REFERENCES Categoria_Insumo(id),
+    FOREIGN KEY (categoriaInsumo_id) REFERENCES Categoria_Insumo(id),
 	FOREIGN KEY (proveedor_id) REFERENCES Proveedor(id)
 );
 
@@ -90,6 +90,7 @@ CREATE TABLE Producto(
 
 CREATE TABLE Tienda(
 	id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
 	direccion VARCHAR(150)
 );
 
@@ -136,7 +137,7 @@ INSERT INTO Direccion (calle, codigo_postal, ciudad, cliente_id) VALUES
 ('Zona 18', 1009, 'Guatemala', 9),
 ('Barrio San Pedro', 1010, 'Antigua', 10);
 
-INSERT INTO User (correo, password, cliente_id) VALUES
+INSERT INTO Usuario (correo, password, cliente_id) VALUES
 ('juan@mail.com', 'pass1', 1),
 ('maria@mail.com', 'pass2', 2),
 ('carlos@mail.com', 'pass3', 3),
@@ -196,7 +197,7 @@ INSERT INTO Categoria_Insumo (nombre) VALUES
 ('Herramientas'),
 ('Otros');
 
-INSERT INTO Insumo (nombre, stock, precio, categoria_id, proveedor_id) VALUES
+INSERT INTO Insumo (nombre, stock, precio, categoriaInsumo_id, proveedor_id) VALUES
 ('Detergente', 50, 25.50, 1, 1),
 ('Escoba', 30, 40.00, 1, 2),
 ('Hojas A4 (resma)', 100, 35.00, 2, 3),
@@ -295,7 +296,7 @@ INSERT INTO Detalle_Factura (factura_id, producto_id, cantidad) VALUES
 (10, 5, 3);
 
 SELECT * FROM Cliente c
-INNER JOIN User u ON u.cliente_id = c.id;
+INNER JOIN Usuario u ON u.cliente_id = c.id;
 
 SELECT * FROM Categoria;
 SELECT * FROM Producto;
