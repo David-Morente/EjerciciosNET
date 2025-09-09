@@ -332,3 +332,5 @@ C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\WebAPIUsuario\WebAPIUsua
 C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\WebAPIUsuario\WebAPIUsuario\obj\Debug\net9.0\WebAPIUsuario.genruntimeconfig.cache
 C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\WebAPIUsuario\WebAPIUsuario\obj\Debug\net9.0\ref\WebAPIUsuario.dll
 C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\WebAPIUsuario\WebAPIUsuario\bin\Debug\net9.0\BCrypt.Net-Next.dll
+C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\WebAPIUsuario\WebAPIUsuario\bin\Debug\net9.0\MySqlConnector.dll
+C:\Users\david\OneDrive\Documentos\GitHub\EjerciciosNET\WebAPIUsuario\WebAPIUsuario\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll

@@ -1,6 +1,6 @@
 ﻿namespace WebAPIUsuario.Models;
 
-public class Factura
+public partial class Factura
 {
     public int Id { get; set; }
     public DateTime Fecha { get; set; }

@@ -2,8 +2,10 @@ using Microsoft.EntityFrameworkCore;
 using WebAPIUsuario.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<DbUsuarioContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionDB"))
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseMySql(builder.Configuration.GetConnectionString("ConnectionDB"),
+    new MySqlServerVersion(new Version(8, 0, 23)))
 );
 
 // Add services to the container.
