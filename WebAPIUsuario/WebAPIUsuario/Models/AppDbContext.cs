@@ -10,7 +10,7 @@ namespace WebAPIUsuario.Models
 
         public virtual DbSet<Cliente> Clientes { get; set; }
         public virtual DbSet<Usuario> Usuarios { get; set; }
-        //public virtual DbSet<Direccion> Direcciones { get; set; }
+        public virtual DbSet<Direccion> Direcciones { get; set; }
         public virtual DbSet<Categoria> Categorias { get; set; }
         public virtual DbSet<Proveedor> Proveedores { get; set; }
         public virtual DbSet<Direccion_Proveedor> Direccion_Proveedores { get; set; }

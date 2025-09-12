@@ -7,31 +7,34 @@ namespace WebAPIUsuario.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuarioController : ControllerBase
+    public class UserController : ControllerBase
     {
-        private readonly DbUsuarioContext _context;
+        private readonly AppDbContext _context;
 
-        public UsuarioController(DbUsuarioContext context){
+        public UserController(AppDbContext context)
+        {
             _context = context;
         }
 
         [HttpGet("listar")]
-        public async Task<ActionResult<IEnumerable<Usuario>>> ListarUsuarios(){
+        public async Task<ActionResult<IEnumerable<Usuario>>> ListarUser()
+        {
             var usuarios = await _context.Usuarios.ToListAsync();
             return Ok(usuarios);
         }
 
         [HttpPost("guardar")]
-        public async Task<ActionResult<Usuario>> GuardarUsuario(Usuario usuario){
+        public async Task<ActionResult<Usuario>> GuardarUser(Usuario usuario)
+        {
             usuario.Password = BCrypt.Net.BCrypt.HashPassword(usuario.Password);
-            usuario.FechaCreacion = DateTime.Now;
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
             return StatusCode(StatusCodes.Status201Created, usuario);
         }
 
         [HttpPut("actualizar/{id}")]
-        public async Task<ActionResult<Usuario>> ActualizarUsuario(int id, Usuario usuario){
+        public async Task<ActionResult<Usuario>> ActualizarUsuario(int id, Usuario usuario)
+        {
             var usuarioActualizado = await _context.Usuarios.FindAsync(id);
 
             if (usuarioActualizado == null)
@@ -39,10 +42,10 @@ namespace WebAPIUsuario.Controllers
                 return NotFound();
             }
 
-            usuarioActualizado.Nombres = usuario.Nombres;
-            usuarioActualizado.Apellidos = usuario.Apellidos;
             usuarioActualizado.Correo = usuario.Correo;
-            usuarioActualizado.Username = usuario.Username;
+            usuario.Password = BCrypt.Net.BCrypt.HashPassword(usuario.Password);
+            usuarioActualizado.Password = usuario.Password;
+            usuarioActualizado.ClienteId = usuario.ClienteId;
 
             await _context.SaveChangesAsync();
 
@@ -50,7 +53,8 @@ namespace WebAPIUsuario.Controllers
         }
 
         [HttpDelete("eliminar/{id}")]
-        public async Task <ActionResult> EliminarUsuario(int id){
+        public async Task<ActionResult> EliminarUsuario(int id)
+        {
             var usuario = await _context.Usuarios.FindAsync(id);
 
             if (usuario == null)

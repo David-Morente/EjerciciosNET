@@ -279,6 +279,192 @@
     ]
   },
   {
+    "ContainingType": "WebAPIUsuario.Controllers.Direccion_ProveedorController",
+    "Method": "ActualizarDireccion_Proveedor",
+    "RelativePath": "api/Direccion_Proveedor/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "direccion_proveedor",
+        "Type": "WebAPIUsuario.Models.Direccion_Proveedor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPIUsuario.Models.Direccion_Proveedor",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPIUsuario.Controllers.Direccion_ProveedorController",
+    "Method": "EliminarDireccion_Proveedor",
+    "RelativePath": "api/Direccion_Proveedor/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPIUsuario.Controllers.Direccion_ProveedorController",
+    "Method": "GuardarDireccion_Proveedor",
+    "RelativePath": "api/Direccion_Proveedor/guardar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "direccion_proveedor",
+        "Type": "WebAPIUsuario.Models.Direccion_Proveedor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPIUsuario.Models.Direccion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPIUsuario.Controllers.Direccion_ProveedorController",
+    "Method": "ListarDireccion_Proveedor",
+    "RelativePath": "api/Direccion_Proveedor/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebAPIUsuario.Models.Direccion_Proveedor, WebAPIUsuario, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPIUsuario.Controllers.DireccionController",
+    "Method": "ActualizarDireccion",
+    "RelativePath": "api/Direccion/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "direccion",
+        "Type": "WebAPIUsuario.Models.Direccion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPIUsuario.Models.Direccion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPIUsuario.Controllers.DireccionController",
+    "Method": "EliminarDireccion",
+    "RelativePath": "api/Direccion/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPIUsuario.Controllers.DireccionController",
+    "Method": "GuardarDireccion",
+    "RelativePath": "api/Direccion/guardar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "direccion",
+        "Type": "WebAPIUsuario.Models.Direccion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPIUsuario.Models.Direccion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPIUsuario.Controllers.DireccionController",
+    "Method": "ListarDireccion",
+    "RelativePath": "api/Direccion/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebAPIUsuario.Models.Direccion, WebAPIUsuario, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebAPIUsuario.Controllers.ProveedorController",
     "Method": "ActualizarCliente",
     "RelativePath": "api/Proveedor/actualizar/{id}",
@@ -465,9 +651,9 @@
     ]
   },
   {
-    "ContainingType": "WebAPIUsuario.Controllers.UsuarioController",
+    "ContainingType": "WebAPIUsuario.Controllers.UserController",
     "Method": "ActualizarUsuario",
-    "RelativePath": "api/Usuario/actualizar/{id}",
+    "RelativePath": "api/User/actualizar/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -496,9 +682,9 @@
     ]
   },
   {
-    "ContainingType": "WebAPIUsuario.Controllers.UsuarioController",
+    "ContainingType": "WebAPIUsuario.Controllers.UserController",
     "Method": "EliminarUsuario",
-    "RelativePath": "api/Usuario/eliminar/{id}",
+    "RelativePath": "api/User/eliminar/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -512,9 +698,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebAPIUsuario.Controllers.UsuarioController",
-    "Method": "GuardarUsuario",
-    "RelativePath": "api/Usuario/guardar",
+    "ContainingType": "WebAPIUsuario.Controllers.UserController",
+    "Method": "GuardarUser",
+    "RelativePath": "api/User/guardar",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -538,9 +724,9 @@
     ]
   },
   {
-    "ContainingType": "WebAPIUsuario.Controllers.UsuarioController",
-    "Method": "ListarUsuarios",
-    "RelativePath": "api/Usuario/listar",
+    "ContainingType": "WebAPIUsuario.Controllers.UserController",
+    "Method": "ListarUser",
+    "RelativePath": "api/User/listar",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
