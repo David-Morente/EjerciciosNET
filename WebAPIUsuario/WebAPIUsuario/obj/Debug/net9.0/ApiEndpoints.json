@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "WebAPIUsuario.Controllers.Categoria_InsumoController",
-    "Method": "ActualizarCliente",
+    "Method": "ActualizarCategoria_Insumo",
     "RelativePath": "api/Categoria_Insumo/actualizar/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -94,7 +94,7 @@
   },
   {
     "ContainingType": "WebAPIUsuario.Controllers.CategoriaController",
-    "Method": "ActualizarCliente",
+    "Method": "ActualizarCategoria",
     "RelativePath": "api/Categoria/actualizar/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -269,6 +269,99 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[WebAPIUsuario.Models.Cliente, WebAPIUsuario, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPIUsuario.Controllers.Compra_ProveedorController",
+    "Method": "ActualizarCompra_Proveedor",
+    "RelativePath": "api/Compra_Proveedor/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "compra_proveedor",
+        "Type": "WebAPIUsuario.Models.Compra_Proveedor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPIUsuario.Models.Compra_Proveedor",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPIUsuario.Controllers.Compra_ProveedorController",
+    "Method": "EliminarCompra_Proveedor",
+    "RelativePath": "api/Compra_Proveedor/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPIUsuario.Controllers.Compra_ProveedorController",
+    "Method": "GuardarCompra_Proveedor",
+    "RelativePath": "api/Compra_Proveedor/guardar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "compra_proveedor",
+        "Type": "WebAPIUsuario.Models.Compra_Proveedor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPIUsuario.Models.Compra_Proveedor",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPIUsuario.Controllers.Compra_ProveedorController",
+    "Method": "ListarCompra_Proveedor",
+    "RelativePath": "api/Compra_Proveedor/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebAPIUsuario.Models.Compra_Proveedor, WebAPIUsuario, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -465,8 +558,101 @@
     ]
   },
   {
+    "ContainingType": "WebAPIUsuario.Controllers.InsumoController",
+    "Method": "ActualizarInsumo",
+    "RelativePath": "api/Insumo/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "insumo",
+        "Type": "WebAPIUsuario.Models.Insumo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPIUsuario.Models.Insumo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPIUsuario.Controllers.InsumoController",
+    "Method": "EliminarInsumo",
+    "RelativePath": "api/Insumo/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPIUsuario.Controllers.InsumoController",
+    "Method": "GuardarCategoria",
+    "RelativePath": "api/Insumo/guardar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "insumo",
+        "Type": "WebAPIUsuario.Models.Insumo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPIUsuario.Models.Insumo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPIUsuario.Controllers.InsumoController",
+    "Method": "ListarInsumo",
+    "RelativePath": "api/Insumo/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebAPIUsuario.Models.Insumo, WebAPIUsuario, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebAPIUsuario.Controllers.ProveedorController",
-    "Method": "ActualizarCliente",
+    "Method": "ActualizarProveedor",
     "RelativePath": "api/Proveedor/actualizar/{id}",
     "HttpMethod": "PUT",
     "IsController": true,

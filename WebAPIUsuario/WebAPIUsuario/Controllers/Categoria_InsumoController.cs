@@ -32,7 +32,7 @@ namespace WebAPIUsuario.Controllers
         } 
 
         [HttpPut("actualizar/{id}")]
-        public async Task<ActionResult<Categoria>> ActualizarCliente(int id, Categoria_Insumo categoria_insumo)
+        public async Task<ActionResult<Categoria>> ActualizarCategoria_Insumo(int id, Categoria_Insumo categoria_insumo)
         {
             var categoria_insumoActualizado = await _context.Categoria_Insumos.FindAsync(id);
 
