@@ -97,7 +97,7 @@ CREATE TABLE Tienda(
 CREATE TABLE Factura(
 	id INT AUTO_INCREMENT PRIMARY KEY,
     fecha DATETIME,
-    total INT NOT NULL,
+    total DECIMAL NOT NULL,
     cliente_id INT NOT NULL,
     tienda_id INT NOT NULL,
     FOREIGN KEY (cliente_id) REFERENCES Cliente(id),
@@ -245,17 +245,17 @@ INSERT INTO Producto (nombre, precio, stock, categoria_id) VALUES
 ('Cereal', 45.00, 100, 6),
 ('Juego de PlayStation', 1200.00, 10, 10);
 
-INSERT INTO Tienda (direccion) VALUES
-('Zona 1, Guatemala'),
-('Zona 10, Guatemala'),
-('Zona 11, Mixco'),
-('Zona 5, Villa Nueva'),
-('Zona 4, Antigua'),
-('Zona 12, Guatemala'),
-('Zona 18, Guatemala'),
-('Zona 16, Guatemala'),
-('Zona 9, Guatemala'),
-('Zona 13, Guatemala');
+INSERT INTO Tienda (nombre, direccion) VALUES 
+('Tienda El Ahorro', 'Av. Central 123, Ciudad de Guatemala'),
+('Supermercado La Económica', 'Calle 10 No. 45, Mixco'),
+('Mini Market San Juan', 'Boulevard Principal Zona 7, Ciudad de Guatemala'),
+('Bodega Las Flores', 'Km 15 Carretera a El Salvador, Santa Catarina Pinula'),
+('Almacén El Centro', '6a Avenida 4-55, Zona 1, Ciudad de Guatemala'),
+('Comercial Los Amigos', '3a Calle 12-34, Quetzaltenango'),
+('Mercado Moderno', '2a Avenida 8-90, Antigua Guatemala'),
+('Despensa Familiar Sur', 'Carretera al Pacífico Km 12, Villa Nueva'),
+('Super Bodega Norte', 'Anillo Periférico 22-10, Zona 11, Ciudad de Guatemala'),
+('Distribuidora San Martín', 'Calle Real 7-20, Chimaltenango');
 
 INSERT INTO Factura (fecha, total, cliente_id, tienda_id) VALUES
 ('2025-09-01 09:00:00', 500.00, 1, 1),

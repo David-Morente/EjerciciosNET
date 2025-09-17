@@ -24,7 +24,7 @@ namespace WebAPIUsuario.Controllers
         }
 
         [HttpPost("guardar")]
-        public async Task<ActionResult<Insumo>> GuardarCategoria(Insumo insumo)
+        public async Task<ActionResult<Insumo>> GuardarInsumo(Insumo insumo)
         {
             _context.Insumos.Add(insumo);
             await _context.SaveChangesAsync();

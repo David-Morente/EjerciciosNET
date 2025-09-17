@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\detalle_facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\controllers\\detalle_facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\tiendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\controllers\\tiendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\models\\detalle_factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\models\\detalle_factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\compra_proveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\controllers\\compra_proveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\detalle_compracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\controllers\\detalle_compracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\proveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,16 +39,28 @@
       "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\controllers\\insumocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\models\\detalle_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\models\\detalle_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\tiendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\controllers\\tiendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\direccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\controllers\\direccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\direccion_proveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\controllers\\direccion_proveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\compra_proveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|solutionrelative:webapiusuario\\controllers\\compra_proveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E75AF99-4A01-47D1-80E0-51CA35B3E0A9}|WebAPIUsuario\\WebAPIUsuario.csproj|c:\\users\\david\\onedrive\\documentos\\github\\ejerciciosnet\\webapiusuario\\webapiusuario\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,63 +138,176 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Detalle_Factura.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Detalle_Factura.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Detalle_Factura.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Detalle_Factura.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Models\\Detalle_Factura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T04:14:08.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Detalle_FacturaController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\Detalle_FacturaController.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\Detalle_FacturaController.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\Detalle_FacturaController.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Controllers\\Detalle_FacturaController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwDYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T04:06:55.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Factura.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Factura.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Factura.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Models\\Factura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T04:01:45.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FacturaController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\FacturaController.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\FacturaController.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\FacturaController.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Controllers\\FacturaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T03:58:09.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T03:48:57.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Detalle_CompraController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\Detalle_CompraController.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\Detalle_CompraController.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\Detalle_CompraController.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Controllers\\Detalle_CompraController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T03:37:28.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Categoria_InsumoController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\Categoria_InsumoController.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\Categoria_InsumoController.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\Categoria_InsumoController.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Controllers\\Categoria_InsumoController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCIAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T21:43:22.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T23:13:40.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InsumoController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\InsumoController.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\InsumoController.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\InsumoController.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Controllers\\InsumoController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T14:22:59.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TiendaController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\TiendaController.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\TiendaController.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\TiendaController.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Controllers\\TiendaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T22:52:28.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Compra_ProveedorController.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\Compra_ProveedorController.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\Compra_ProveedorController.cs",
               "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\Compra_ProveedorController.cs",
               "RelativeToolTip": "WebAPIUsuario\\Controllers\\Compra_ProveedorController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAiwB4AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwEEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-16T14:42:47.94Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Insumo.cs",
-              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Insumo.cs",
-              "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Insumo.cs",
-              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Insumo.cs",
-              "RelativeToolTip": "WebAPIUsuario\\Models\\Insumo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAABAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "CategoriaController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\CategoriaController.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\CategoriaController.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\CategoriaController.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Controllers\\CategoriaController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwD8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T14:28:07.96Z",
+              "WhenOpened": "2025-09-10T20:02:37.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Producto.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T03:47:55.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Direccion_ProveedorController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\Direccion_ProveedorController.cs",
-              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\Direccion_ProveedorController.cs",
-              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\Direccion_ProveedorController.cs",
-              "RelativeToolTip": "WebAPIUsuario\\Controllers\\Direccion_ProveedorController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAEwDoAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T23:18:29.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DireccionController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\DireccionController.cs",
-              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\DireccionController.cs",
-              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\DireccionController.cs",
-              "RelativeToolTip": "WebAPIUsuario\\Controllers\\DireccionController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowEIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T23:02:03.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "ProveedorController.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\ProveedorController.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\ProveedorController.cs",
@@ -175,85 +320,69 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CategoriaController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\CategoriaController.cs",
-              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\CategoriaController.cs",
-              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\CategoriaController.cs",
-              "RelativeToolTip": "WebAPIUsuario\\Controllers\\CategoriaController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwD8AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Detalle_Compra.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Detalle_Compra.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Detalle_Compra.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Detalle_Compra.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Models\\Detalle_Compra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:02:37.444Z",
+              "WhenOpened": "2025-09-17T03:38:14.964Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Categoria_InsumoController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\Categoria_InsumoController.cs",
-              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\Categoria_InsumoController.cs",
-              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\Categoria_InsumoController.cs",
-              "RelativeToolTip": "WebAPIUsuario\\Controllers\\Categoria_InsumoController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCIAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T21:43:22.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "WebAPIUsuario\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T23:13:40.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InsumoController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\InsumoController.cs",
-              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\InsumoController.cs",
-              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\InsumoController.cs",
-              "RelativeToolTip": "WebAPIUsuario\\Controllers\\InsumoController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAiwBUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T14:22:59.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TiendaController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\TiendaController.cs",
-              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\TiendaController.cs",
-              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\TiendaController.cs",
-              "RelativeToolTip": "WebAPIUsuario\\Controllers\\TiendaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T22:52:28.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\UserController.cs",
               "RelativeToolTip": "WebAPIUsuario\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-12T20:47:12.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
+              "Title": "DireccionController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\DireccionController.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\DireccionController.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\DireccionController.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Controllers\\DireccionController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T23:02:03.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Direccion_ProveedorController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\Direccion_ProveedorController.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Controllers\\Direccion_ProveedorController.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Controllers\\Direccion_ProveedorController.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Controllers\\Direccion_ProveedorController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAEwDoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T23:18:29.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Insumo.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Insumo.cs",
+              "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Insumo.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Insumo.cs",
+              "RelativeToolTip": "WebAPIUsuario\\Models\\Insumo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T14:28:07.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Compra_Proveedor.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Compra_Proveedor.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Compra_Proveedor.cs",
@@ -261,12 +390,11 @@
               "RelativeToolTip": "WebAPIUsuario\\Models\\Compra_Proveedor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T14:43:59.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-16T14:43:59.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "Direccion.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Direccion.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Direccion.cs",
@@ -278,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "Proveedor.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Proveedor.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Proveedor.cs",
@@ -290,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\AppDbContext.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\AppDbContext.cs",
@@ -302,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "DbUsuarioContext.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\DbUsuarioContext.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\DbUsuarioContext.cs",
@@ -314,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "Tienda.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Tienda.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Tienda.cs",
@@ -326,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\appsettings.json",
               "RelativeDocumentMoniker": "WebAPIUsuario\\appsettings.json",
@@ -338,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Categoria.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Categoria.cs",
@@ -350,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "Direccion_Proveedor.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Direccion_Proveedor.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Direccion_Proveedor.cs",
@@ -362,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Cliente.cs",
@@ -374,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Usuario.cs",
@@ -386,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "Categoria_Insumo.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Models\\Categoria_Insumo.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Models\\Categoria_Insumo.cs",
@@ -398,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\EjerciciosNET\\WebAPIUsuario\\WebAPIUsuario\\Program.cs",
               "RelativeDocumentMoniker": "WebAPIUsuario\\Program.cs",

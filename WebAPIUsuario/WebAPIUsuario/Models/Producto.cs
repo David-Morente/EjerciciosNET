@@ -1,5 +1,8 @@
-﻿namespace WebAPIUsuario.Models;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
+namespace WebAPIUsuario.Models;
+
+[Table("Producto")]
 public partial class Producto
 {
     public int Id { get; set; }
@@ -10,5 +13,6 @@ public partial class Producto
 
     public int Stock { get; set; }
 
+    [Column("categoria_id")]
     public int CategoriaId { get; set; }
 }
