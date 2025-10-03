@@ -1,0 +1,138 @@
+<nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-purple-600">🛒 Tienda Online</span>
+            </div>
+            <div class="flex items-center space-x-8">
+                <a class="text-gray-700 hover:text-purple-600 font-medium transition-colors cursor-pointer" (click)="goToRouter('/')">Inicio</a>
+                <a class="text-purple-600 font-medium cursor-pointer" (click)="goToRouter('/product')">Productos</a>
+                <button class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                (click)="goToRouter('/login')">
+                    Iniciar Sesión
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="bg-gradient-to-r from-purple-600 to-indigo-700 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-bold mb-4">Nuestros Productos</h1>
+        <p class="text-xl opacity-90">Encuentra los mejores productos con la mejor calidad</p>
+    </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex flex-wrap gap-4 items-center justify-between mb-8">
+        <div class="flex flex-wrap gap-4">
+            <select class="px-4 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent outline-none">
+                <option>Todas las categorías</option>
+                <option>Electrónica</option>
+                <option>Ropa</option>
+                <option>Hogar</option>
+                <option>Deportes</option>
+            </select>
+            <select class="px-4 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent outline-none">
+                <option>Ordenar por</option>
+                <option>Precio: Menor a Mayor</option>
+                <option>Precio: Mayor a Menor</option>
+                <option>Nombre A-Z</option>
+                <option>Stock Disponible</option>
+            </select>
+        </div>
+        <div class="relative">
+            <input 
+                type="text" 
+                placeholder="Buscar productos..." 
+                class="pl-10 pr-4 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent outline-none w-64"
+            >
+            <svg class="absolute left-3 top-3 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+            <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 flex items-center justify-center">
+                <div class="text-7xl">💻</div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Laptop Gaming Pro</h3>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-2xl font-bold text-purple-600">$1,299.99</span>
+                </div>
+                <div class="mb-4">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+                        15 en stock
+                    </span>
+                </div>
+                <button class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:shadow-lg hover:-translate-y-0.5 text-white py-3 rounded-lg font-semibold transition-all duration-300">
+                    Agregar al Carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+            <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 flex items-center justify-center">
+                <div class="text-7xl">🎧</div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Auriculares Bluetooth</h3>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-2xl font-bold text-purple-600">$89.99</span>
+                </div>
+                <div class="mb-4">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+                        45 en stock
+                    </span>
+                </div>
+                <button class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:shadow-lg hover:-translate-y-0.5 text-white py-3 rounded-lg font-semibold transition-all duration-300">
+                    Agregar al Carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+            <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 flex items-center justify-center">
+                <div class="text-7xl">⌚</div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Smartwatch Ultra</h3>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-2xl font-bold text-purple-600">$399.99</span>
+                </div>
+                <div class="mb-4">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                        8 en stock
+                    </span>
+                </div>
+                <button class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:shadow-lg hover:-translate-y-0.5 text-white py-3 rounded-lg font-semibold transition-all duration-300">
+                    Agregar al Carrito
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+            <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-8 flex items-center justify-center">
+                <div class="text-7xl">🎒</div>
+            </div>
+            <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Mochila Ejecutiva</h3>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-2xl font-bold text-purple-600">$79.99</span>
+                </div>
+                <div class="mb-4">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800">
+                        Agotado
+                    </span>
+                </div>
+                <button disabled class="w-full bg-gray-300 cursor-not-allowed text-white py-3 rounded-lg font-semibold">
+                    Agotado
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
