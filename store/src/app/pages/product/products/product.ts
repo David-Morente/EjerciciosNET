@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 export class Product {
   constructor(private router: Router) {}
 
-    goToRouter(navigate: string) {
-        this.router.navigate([navigate]);
-    }
+  goToRouter(navigate: string) {
+      this.router.navigate([navigate]);
+  }
 }
