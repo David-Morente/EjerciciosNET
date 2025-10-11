@@ -1,0 +1,258 @@
+<nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-purple-600">🛒 Admin - Tienda Online</span>
+            </div>
+            <div class="flex items-center space-x-8">
+                <a href="#dashboard" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Dashboard</a>
+                <a href="#productos" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Productos</a>
+                <a href="#insumos" class="text-purple-600 font-medium">Insumos</a>
+                <a href="#proveedores" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Proveedores</a>
+                <button class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                    Salir
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="bg-gradient-to-r from-purple-600 to-indigo-700 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-bold mb-4">Gestión de Insumos</h1>
+        <p class="text-xl opacity-90">Administra el inventario de insumos y materiales</p>
+    </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <div class="lg:col-span-2">
+            <div class="bg-white rounded-xl shadow-md p-8">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="bg-purple-100 p-3 rounded-lg">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">Agregar Nuevo Insumo</h2>
+                        <p class="text-sm text-gray-500">Complete la información del insumo</p>
+                    </div>
+                </div>
+                
+                <form class="space-y-6">
+                    <div>
+                        <label for="nombreInsumo" class="block text-sm font-medium text-gray-700 mb-2">
+                            Nombre del Insumo *
+                        </label>
+                        <input 
+                            type="text" 
+                            id="nombreInsumo" 
+                            name="nombreInsumo"
+                            placeholder="Ej: Tornillos de acero, Pintura blanca, etc."
+                            required
+                            class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all outline-none"
+                        >
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="stock" class="block text-sm font-medium text-gray-700 mb-2">
+                                Stock Disponible *
+                            </label>
+                            <input 
+                                type="number" 
+                                id="stock" 
+                                name="stock"
+                                placeholder="0"
+                                min="0"
+                                required
+                                class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all outline-none"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="precio" class="block text-sm font-medium text-gray-700 mb-2">
+                                Precio Unitario
+                            </label>
+                            <div class="relative">
+                                <span class="absolute left-4 top-3 text-gray-500 font-semibold">$</span>
+                                <input 
+                                    type="number" 
+                                    id="precio" 
+                                    name="precio"
+                                    placeholder="0.00"
+                                    step="0.01"
+                                    min="0"
+                                    required
+                                    class="w-full pl-8 pr-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all outline-none"
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="categoriaInsumo" class="block text-sm font-medium text-gray-700 mb-2">
+                            Categoría de Insumo *
+                        </label>
+                        <select 
+                            id="categoriaInsumo" 
+                            name="categoriaInsumo"
+                            required
+                            class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all outline-none"
+                        >
+                            <option value="">Selecciona una categoría</option>
+                            <option *ngFor="let category_supplie of category_supplies" [value]="category_supplie.id">{{category_supplie.emoji}} {{category_supplie.nombre}}</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="proveedor" class="block text-sm font-medium text-gray-700 mb-2">
+                            Proveedor *
+                        </label>
+                        <select 
+                            id="proveedor" 
+                            name="proveedor"
+                            required
+                            class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all outline-none"
+                        >
+                            <option >Selecciona un proveedor</option>
+                            <option *ngFor="let supplier of suppliers" [value]="supplier.id">{{supplier.nombre_Empresa}}</option>
+                        </select>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <button 
+                            type="button"
+                            class="flex-1 bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2"
+                            (click)="saveChanges()"
+                        >
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            Agregar Insumo
+                        </button>
+                        <button 
+                            type="reset"
+                            class="flex-1 bg-gray-200 text-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-300 transition-colors flex items-center justify-center gap-2"
+                        >
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                            Cancelar
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 mt-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-gray-800">Insumos Registrados</h2>
+                    <div class="flex gap-2">
+                        <input 
+                            type="text" 
+                            placeholder="Buscar insumo..."
+                            class="px-4 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent outline-none text-sm"
+                        >
+                        <select class="px-4 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 outline-none text-sm">
+                            <option>Todas las categorías</option>
+                            <option *ngFor="let category_supplie of category_supplies">{{category_supplie.emoji}} {{category_supplie.nombre}}</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b-2 border-gray-200">
+                                <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">#</th>
+                                <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Nombre</th>
+                                <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Categoría</th>
+                                <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Proveedor</th>
+                                <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Stock</th>
+                                <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Precio</th>
+                                <th class="text-center py-3 px-4 text-sm font-semibold text-gray-700">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-100 hover:bg-purple-50 transition-colors"
+                            *ngFor="let supplie of supplies">
+                                <td class="py-4 px-4 text-gray-600 font-medium">{{supplie.id}}</td>
+                                <td class="py-4 px-4">
+                                    <div class="flex items-center gap-3">
+                                        <div>
+                                            <p class="font-semibold text-gray-800">{{supplie.nombre}}</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-4">
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold rounded-full">
+                                        {{supplie.categoria}}
+                                    </span>
+                                </td>
+                                <td class="py-4 px-4">
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm text-gray-700">{{supplie.proveedor}}</span>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-4">
+                                    <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-semibold rounded">
+                                        {{supplie.cantidad}}
+                                    </span>
+                                </td>
+                                <td class="py-4 px-4">
+                                    <span class="text-gray-800 font-semibold">${{supplie.precio}}</span>
+                                </td>
+                                <td class="py-4 px-4">
+                                    <div class="flex justify-center gap-2">
+                                        <button class="p-2 bg-blue-100 text-blue-600 rounded-lg hover:bg-blue-200 transition-colors" title="Editar"
+                                        (click)="getSupplieById(supplie.id)">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                                            </svg>
+                                        </button>
+                                        <button class="p-2 bg-red-100 text-red-600 rounded-lg hover:bg-red-200 transition-colors" title="Eliminar"
+                                        (click)="deleteSupplie(supplie.id)">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:col-span-1 space-y-6">
+            
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-4">Categorías de Insumos</h3>
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between p-3 bg-purple-50 rounded-lg"
+                    *ngFor="let category_supplie of category_supplies">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xl">{{category_supplie.emoji}}</span>
+                            <span class="text-sm font-medium text-gray-700">{{category_supplie.nombre}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-4">Proveedores Disponibles</h3>
+                <div class="space-y-2">
+                    <div class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors"
+                    *ngFor="let supplier of suppliers">
+                        <span class="text-sm text-gray-700">🏪 {{supplier.nombre_Empresa}}</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

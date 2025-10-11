@@ -1,0 +1,131 @@
+<nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-purple-600">🛒 Admin - Tienda Online</span>
+            </div>
+            <div class="flex items-center space-x-8">
+                <a href="#dashboard" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Dashboard</a>
+                <a href="#tiendas" class="text-purple-600 font-medium">Tiendas</a>
+                <a href="#productos" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Productos</a>
+                <a href="#categorias" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Categorías</a>
+                <button class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                    Salir
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="bg-gradient-to-r from-purple-600 to-indigo-700 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-bold mb-4">Gestión de Tiendas</h1>
+        <p class="text-xl opacity-90">Administra las tiendas de tu plataforma</p>
+    </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <div class="lg:col-span-2">
+            <div class="bg-white rounded-xl shadow-md p-8">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="bg-purple-100 p-3 rounded-lg">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">Agregar Nueva Tienda</h2>
+                        <p class="text-sm text-gray-500">Complete el formulario para crear una nueva tienda</p>
+                    </div>
+                </div>
+                
+                <form class="space-y-6">
+                    <div>
+                        <label for="nombreTienda" class="block text-sm font-medium text-gray-700 mb-2">
+                            Nombre de la Tienda *
+                        </label>
+                        <input 
+                            type="text" 
+                            id="nombreTienda" 
+                            name="nombreTienda"
+                            placeholder="Ej: Mi Tienda Digital"
+                            required
+                            class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all outline-none text-lg"
+                        >
+                        <p class="text-xs text-gray-500 mt-2">El nombre debe ser único y representativo de tu tienda</p>
+                    </div>
+
+                    <div>
+                        <label for="direccion" class="block text-sm font-medium text-gray-700 mb-2">
+                            Direccion de la Tienda *
+                        </label>
+                        <input 
+                            type="text" 
+                            id="direccion" 
+                            name="direccion"
+                            placeholder="Ej: Calle 123, Ciudad, País"
+                            required
+                            class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all outline-none text-lg"
+                        >
+                        <p class="text-xs text-gray-500 mt-2">Direccion debe ser única</p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <button 
+                            type="button"
+                            class="flex-1 bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4 rounded-lg font-semibold text-lg hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2"
+                            (click)="saveChanges()"
+                        >
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            Crear Tienda
+                        </button>
+                        <button 
+                            type="reset"
+                            class="flex-1 bg-gray-200 text-gray-700 py-4 rounded-lg font-semibold text-lg hover:bg-gray-300 transition-colors flex items-center justify-center gap-2"
+                        >
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                            Cancelar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="lg:col-span-1">
+            <div class="bg-white rounded-xl shadow-md p-6 sticky top-24">
+                <h2 class="text-xl font-bold text-gray-800 mb-6">Tiendas Existentes</h2>
+                
+                <div class="space-y-4 max-h-[600px] overflow-y-auto">
+                    <div class="group relative p-4 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-lg border-2 border-purple-200 hover:shadow-md transition-all"
+                    *ngFor="let store of stores">
+                        <div class="flex items-start gap-3">
+                            <div class="bg-gradient-to-br from-purple-600 to-indigo-600 w-12 h-12 rounded-lg flex items-center justify-center text-white text-xl flex-shrink-0">
+                                🏪
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="font-bold text-gray-800 truncate">{{store.nombre}}</h3>
+                                <p class="text-xs text-gray-500 mb-2">{{store.direccion}}</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 mt-3">
+                            <button class="flex-1 px-3 py-1.5 bg-white text-purple-600 text-sm font-medium rounded hover:bg-purple-600 hover:text-white transition-all"
+                            (click)="deleteStore(store.id)">
+                                Eliminar
+                            </button>
+                            <button class="flex-1 px-3 py-1.5 bg-white text-purple-600 text-sm font-medium rounded hover:bg-purple-600 hover:text-white transition-all"
+                            (click)="getStoreById(store.id)">
+                                Editar
+                            </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</div>

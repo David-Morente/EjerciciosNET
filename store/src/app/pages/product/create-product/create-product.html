@@ -85,6 +85,7 @@
                         <label for="categoria" class="block text-sm font-medium text-gray-700 mb-2">
                             Categoría *
                         </label>
+                        
                         <select 
                             id="categoria" 
                             name="categoria"
@@ -92,14 +93,7 @@
                             class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all outline-none"
                         >
                             <option value="">Selecciona una categoría</option>
-                            <option value="electronica">📱 Electrónica</option>
-                            <option value="ropa">👕 Ropa y Accesorios</option>
-                            <option value="hogar">🏠 Hogar y Decoración</option>
-                            <option value="deportes">⚽ Deportes y Fitness</option>
-                            <option value="libros">📚 Libros y Medios</option>
-                            <option value="juguetes">🎮 Juguetes y Juegos</option>
-                            <option value="belleza">💄 Belleza y Cuidado Personal</option>
-                            <option value="alimentos">🍔 Alimentos y Bebidas</option>
+                            <option *ngFor="let category of categories" [value]="category.id">{{category.emoji}} {{category.nombre}}</option>
                         </select>
                     </div>
 
@@ -120,8 +114,9 @@
 
                     <div class="flex flex-col sm:flex-row gap-4 pt-4">
                         <button 
-                            type="submit"
+                            type="button"
                             class="flex-1 bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                            (click)="saveChanges()"
                         >
                             ✓ Agregar Producto
                         </button>
@@ -135,131 +130,69 @@
                     </div>
                 </form>
             </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 mt-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-gray-800">Productos Registrados</h2>
+                    <div class="flex gap-2">
+                        <input 
+                            type="text" 
+                            placeholder="Buscar producto..."
+                            class="px-4 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent outline-none text-sm"
+                        >
+                        <select class="px-4 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 outline-none text-sm">
+                            <option>Todas las categorías</option>
+                            <option *ngFor="let category of categories">{{category.nombre}}</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+                    
+                    <div class="bg-white border-2 border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+                    *ngFor="let product of products">
+                        <div class="bg-gradient-to-br from-purple-100 to-indigo-100 p-6 flex items-center justify-center h-32">
+                            <div class="text-5xl">{{product.emoji}}</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-base font-bold text-gray-800 mb-1 truncate">{{product.nombre}}</h3>
+                            <p class="text-xs text-gray-500 mb-3">{{product.categoria}}</p>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xl font-bold text-purple-600">${{product.precio}}</span>
+                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded">
+                                    {{product.stock}} stock
+                                </span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button class="flex-1 p-2 bg-blue-100 text-blue-600 rounded-lg hover:bg-blue-200 transition-colors text-sm font-medium"
+                                (click)="getProductById(product.id)">
+                                    ✏️ Editar
+                                </button>
+                                <button class="flex-1 p-2 bg-red-100 text-red-600 rounded-lg hover:bg-red-200 transition-colors text-sm font-medium"
+                                (click)="deleteProduct(product.id)">
+                                    🗑️ Eliminar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
         <div class="lg:col-span-1">
             <div class="bg-white rounded-xl shadow-md p-6 sticky top-24">
                 <h2 class="text-xl font-bold text-gray-800 mb-6">Categorías Disponibles</h2>
                 
-                <div class="space-y-3">
+                <div class="space-y-3" *ngFor="let category of categories">
                     <div class="flex items-center justify-between p-3 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors cursor-pointer">
                         <div class="flex items-center gap-3">
-                            <span class="text-2xl">📱</span>
+                            <span class="text-2xl">{{category.emoji}}</span>
                             <div>
-                                <p class="font-semibold text-gray-800">Electrónica</p>
-                                <p class="text-xs text-gray-500">24 productos</p>
+                                <p class="font-semibold text-gray-800">{{category.nombre}}</p>
                             </div>
                         </div>
-                        <button class="text-purple-600 hover:text-purple-700">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">👕</span>
-                            <div>
-                                <p class="font-semibold text-gray-800">Ropa y Accesorios</p>
-                                <p class="text-xs text-gray-500">18 productos</p>
-                            </div>
-                        </div>
-                        <button class="text-gray-600 hover:text-gray-700">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">🏠</span>
-                            <div>
-                                <p class="font-semibold text-gray-800">Hogar y Decoración</p>
-                                <p class="text-xs text-gray-500">15 productos</p>
-                            </div>
-                        </div>
-                        <button class="text-gray-600 hover:text-gray-700">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">⚽</span>
-                            <div>
-                                <p class="font-semibold text-gray-800">Deportes y Fitness</p>
-                                <p class="text-xs text-gray-500">12 productos</p>
-                            </div>
-                        </div>
-                        <button class="text-gray-600 hover:text-gray-700">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">📚</span>
-                            <div>
-                                <p class="font-semibold text-gray-800">Libros y Medios</p>
-                                <p class="text-xs text-gray-500">8 productos</p>
-                            </div>
-                        </div>
-                        <button class="text-gray-600 hover:text-gray-700">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">🎮</span>
-                            <div>
-                                <p class="font-semibold text-gray-800">Juguetes y Juegos</p>
-                                <p class="text-xs text-gray-500">10 productos</p>
-                            </div>
-                        </div>
-                        <button class="text-gray-600 hover:text-gray-700">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">💄</span>
-                            <div>
-                                <p class="font-semibold text-gray-800">Belleza y Cuidado</p>
-                                <p class="text-xs text-gray-500">14 productos</p>
-                            </div>
-                        </div>
-                        <button class="text-gray-600 hover:text-gray-700">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">🍔</span>
-                            <div>
-                                <p class="font-semibold text-gray-800">Alimentos y Bebidas</p>
-                                <p class="text-xs text-gray-500">6 productos</p>
-                            </div>
-                        </div>
-                        <button class="text-gray-600 hover:text-gray-700">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
                     </div>
                 </div>
 

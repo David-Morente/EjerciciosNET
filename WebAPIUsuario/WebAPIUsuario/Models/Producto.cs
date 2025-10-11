@@ -15,4 +15,8 @@ public partial class Producto
 
     [Column("categoria_id")]
     public int CategoriaId { get; set; }
+
+    public string Emoji { get; set; } = null!;
+
+    public virtual Categoria? Categoria { get; set; } = null!;
 }

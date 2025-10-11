@@ -20,6 +20,13 @@ builder.Services.AddCors(options =>
         policy => policy.AllowAnyOrigin()
                         .AllowAnyMethod()
                         .AllowAnyHeader());
+
+    //options.AddPolicy(name: "AllowAll",
+    //    policy =>
+    //    {
+    //        policy.WithOrigins("http://localhost:4200")
+    //                .WithMethods("PUT", "DELETE", "GET", "POST");
+    //    });
 });
 
 var app = builder.Build();
@@ -47,9 +54,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-
 app.UseCors("AllowAll");
+
+app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

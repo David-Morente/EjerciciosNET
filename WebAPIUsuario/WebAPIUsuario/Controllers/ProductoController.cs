@@ -19,7 +19,19 @@ namespace WebAPIUsuario.Controllers
         [HttpGet("listar")]
         public async Task<ActionResult<IEnumerable<Producto>>> ListarProducto()
         {
-            var productos = await _context.Productos.ToListAsync();
+            var productos = await _context.Productos
+            .Include(i => i.Categoria)
+            .Select(i => new
+            {
+                i.Id,
+                i.Nombre,
+                i.Precio,
+                i.Stock,
+                Categoria = i.Categoria.Nombre,
+                categoriaId = i.Categoria.Id,
+                i.Emoji
+            })
+            .ToListAsync();
             return Ok(productos);
         }
 

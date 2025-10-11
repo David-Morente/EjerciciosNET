@@ -20,4 +20,8 @@ public partial class Insumo
 
     [Column("proveedor_id")]
     public int ProveedorId { get; set; }
+
+    public virtual Categoria_Insumo? CategoriaInsumo { get; set; } = null!;
+
+    public virtual Proveedor? Proveedor { get; set; } = null!;
 }

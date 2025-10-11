@@ -10,4 +10,6 @@ public partial class Proveedor
     public int Id { get; set; }
 
     public string Nombre_Empresa { get; set; } = null!;
+
+    public virtual ICollection<Insumo> Insumos { get; set; } = new List<Insumo>();
 }

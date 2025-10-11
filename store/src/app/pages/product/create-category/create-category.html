@@ -63,8 +63,9 @@
 
                     <div class="flex flex-col sm:flex-row gap-4 pt-4">
                         <button 
-                            type="submit"
+                            type="button"
                             class="flex-1 bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                            (click)="saveChanges()"
                         >
                             ✓ Guardar Categoría
                         </button>
@@ -85,118 +86,30 @@
                 <h2 class="text-xl font-bold text-gray-800 mb-6">Categorías Existentes</h2>
                 
                 <div class="space-y-3 max-h-[600px] overflow-y-auto">
-                    <div class="group relative p-4 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-lg border border-purple-200">
+                    <div class="group relative p-4 bg-gray-50 rounded-lg border border-gray-200"
+                        *ngFor="let category of categories">
                         <div class="flex items-center justify-between mb-2">
                             <div class="flex items-center gap-3">
-                                <span class="text-2xl">📱</span>
+                                <span class="text-2xl">{{category.emoji}}</span>
                                 <div>
-                                    <p class="font-semibold text-gray-800">Electrónica</p>
-                                    <p class="text-xs text-gray-500">24 productos</p>
+                                    <p class="font-semibold text-gray-800">{{category.nombre}}</p>
                                 </div>
                             </div>
-                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">Activa</span>
                         </div>
-                        <div class="flex gap-2 mt-3">
-                            <button class="flex-1 px-3 py-1.5 bg-white text-purple-600 text-sm font-medium rounded hover:bg-purple-50 transition-colors">
-                                ✏️ Editar
-                            </button>
-                            <button class="flex-1 px-3 py-1.5 bg-white text-red-600 text-sm font-medium rounded hover:bg-red-50 transition-colors">
-                                🗑️ Eliminar
-                            </button>
-                        </div>
-                    </div>
 
-                    <div class="group relative p-4 bg-gray-50 rounded-lg border border-gray-200">
-                        <div class="flex items-center justify-between mb-2">
-                            <div class="flex items-center gap-3">
-                                <span class="text-2xl">👕</span>
-                                <div>
-                                    <p class="font-semibold text-gray-800">Ropa y Accesorios</p>
-                                    <p class="text-xs text-gray-500">18 productos</p>
-                                </div>
-                            </div>
-                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">Activa</span>
-                        </div>
                         <div class="flex gap-2 mt-3">
-                            <button class="flex-1 px-3 py-1.5 bg-white text-purple-600 text-sm font-medium rounded hover:bg-purple-50 transition-colors">
+                            <button class="flex-1 px-3 py-1.5 bg-white text-purple-600 text-sm font-medium rounded hover:bg-purple-50 transition-colors"
+                                (click)="getCategoryById(category.id)">
                                 ✏️ Editar
                             </button>
-                            <button class="flex-1 px-3 py-1.5 bg-white text-red-600 text-sm font-medium rounded hover:bg-red-50 transition-colors">
-                                🗑️ Eliminar
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="group relative p-4 bg-gray-50 rounded-lg border border-gray-200">
-                        <div class="flex items-center justify-between mb-2">
-                            <div class="flex items-center gap-3">
-                                <span class="text-2xl">🏠</span>
-                                <div>
-                                    <p class="font-semibold text-gray-800">Hogar y Decoración</p>
-                                    <p class="text-xs text-gray-500">15 productos</p>
-                                </div>
-                            </div>
-                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">Activa</span>
-                        </div>
-                        <div class="flex gap-2 mt-3">
-                            <button class="flex-1 px-3 py-1.5 bg-white text-purple-600 text-sm font-medium rounded hover:bg-purple-50 transition-colors">
-                                ✏️ Editar
-                            </button>
-                            <button class="flex-1 px-3 py-1.5 bg-white text-red-600 text-sm font-medium rounded hover:bg-red-50 transition-colors">
-                                🗑️ Eliminar
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="group relative p-4 bg-gray-50 rounded-lg border border-gray-200">
-                        <div class="flex items-center justify-between mb-2">
-                            <div class="flex items-center gap-3">
-                                <span class="text-2xl">⚽</span>
-                                <div>
-                                    <p class="font-semibold text-gray-800">Deportes y Fitness</p>
-                                    <p class="text-xs text-gray-500">12 productos</p>
-                                </div>
-                            </div>
-                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">Activa</span>
-                        </div>
-                        <div class="flex gap-2 mt-3">
-                            <button class="flex-1 px-3 py-1.5 bg-white text-purple-600 text-sm font-medium rounded hover:bg-purple-50 transition-colors">
-                                ✏️ Editar
-                            </button>
-                            <button class="flex-1 px-3 py-1.5 bg-white text-red-600 text-sm font-medium rounded hover:bg-red-50 transition-colors">
-                                🗑️ Eliminar
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="group relative p-4 bg-gray-50 rounded-lg border border-gray-200 opacity-60">
-                        <div class="flex items-center justify-between mb-2">
-                            <div class="flex items-center gap-3">
-                                <span class="text-2xl">🎨</span>
-                                <div>
-                                    <p class="font-semibold text-gray-800">Arte y Manualidades</p>
-                                    <p class="text-xs text-gray-500">5 productos</p>
-                                </div>
-                            </div>
-                            <span class="px-2 py-1 bg-gray-200 text-gray-600 text-xs font-semibold rounded-full">Inactiva</span>
-                        </div>
-                        <div class="flex gap-2 mt-3">
-                            <button class="flex-1 px-3 py-1.5 bg-white text-purple-600 text-sm font-medium rounded hover:bg-purple-50 transition-colors">
-                                ✏️ Editar
-                            </button>
-                            <button class="flex-1 px-3 py-1.5 bg-white text-red-600 text-sm font-medium rounded hover:bg-red-50 transition-colors">
+                            <button class="flex-1 px-3 py-1.5 bg-white text-red-600 text-sm font-medium rounded hover:bg-red-50 transition-colors"
+                                (click)="deleteCategory(category.id)">
                                 🗑️ Eliminar
                             </button>
                         </div>
                     </div>
                 </div>
-
-                <div class="mt-6 pt-6 border-t space-y-3">
-                    <div class="flex justify-between items-center">
-                        <span class="text-sm text-gray-600">Total Categorías:</span>
-                        <span class="text-lg font-bold text-purple-600">8</span>
-                    </div>
-                </div>
+                
             </div>
         </div>
 
